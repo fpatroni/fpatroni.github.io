@@ -21,6 +21,7 @@ header {
     display: flex;
     align-items: center;
     height: 10vh;
+    margin-top: 50px;
 }
 
 .logo-container {
@@ -109,6 +110,10 @@ nav {
     display: flex;
     margin-left: 3px;
     align-items: center;
+}
+
+.contact a {
+    color: #0cdb96;
 }
 
 figure#email-icon img {
