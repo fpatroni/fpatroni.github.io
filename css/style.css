@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 16vh;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo-container {
+    flex: 1;
+    background-color: #006135;
+}
+
+figure#my-img img {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0px 5px 3px black);
+}
+
+.logo-text {
+    font-weight: 500;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 20px;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+    background-color: #006135;
+    border-left: thick solid #ffffff;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.presentation {
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.normal-text {
+    font-size: 22px;
+    font-weight: 500px;
+}
+
+.normal-text h1 {
+    font-size: 40px;
+    margin: 5px;
+    color: #585772;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.normal-text p {
+    margin: 5px;
+    color: #585772;
+    text-align: justify;
+}
+
+.normal-text li {
+    border: thin solid #585772;
+    margin-bottom: 30px;
+    text-align: justify;
+    list-style: none;
+    box-shadow: 1px 1px 2px #777
+}
+
+.normal-text li a {
+    color: #0cdb96;
+}
+
+.contact {
+    display: flex;
+    margin-left: 3px;
+    align-items: center;
+}
+
+figure#email-icon img {
+    width: 30px;
+    height: auto;
+}
+
+footer {
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+    background-color: #006135;
+    margin-bottom: 5px;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* for mobile */
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+    }
+
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .normal-text h1 {
+        font-size: 30px;
+    }
+
+    .normal-text p {
+        font-size: 18px;
+    }
+
+    .normal-text li {
+        text-align: justify;
+        font-size: 18px;
+    }
+}
